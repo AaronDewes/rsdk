@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: rsdk
-Source: https://github.com/RadxaOS-SDK/rsdk
+Source: https://github.com/AaronDewes/rsdk
 
 Files: *
 Copyright: © 2024 Radxa Computer Co., Ltd

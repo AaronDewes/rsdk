@@ -18,7 +18,7 @@ For SSH, simple disconnect the current session and reconnect.
 Then clone the project with `git` and install `devcontainer`:
 
 ```bash
-git clone --recurse-submodules https://github.com/RadxaOS-SDK/rsdk.git
+git clone --recurse-submodules https://github.com/AaronDewes/rsdk.git
 cd rsdk
 npm install @devcontainers/cli
 export PATH="$PWD/src/bin:$PWD/node_modules/.bin:$PATH"

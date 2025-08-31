@@ -20,7 +20,7 @@ Then follow Visual Studio Code's documentation to:
 Then clone the project with `git`:
 
 ```bash
-git clone --recurse-submodules https://github.com/RadxaOS-SDK/rsdk.git
+git clone --recurse-submodules https://github.com/AaronDewes/rsdk.git
 ```
 
 Open the project in Visual Studio Code. A notification will pop up on the corner

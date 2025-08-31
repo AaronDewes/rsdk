@@ -6,7 +6,7 @@ runs:
     - name: Checkout
       uses: actions/checkout@v5
       with:
-        repository: RadxaOS-SDK/rsdk
+        repository: AaronDewes/rsdk
         submodules: recursive
     - name: Enable KVM group perms
       shell: bash

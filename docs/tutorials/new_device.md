@@ -36,7 +36,7 @@ Currently, there are 4 places that need to be updated:
    some common config options.
    Those are defined in [`radxa-profiles`](https://github.com/radxa-pkg/radxa-profiles/blob/main/debian/control)
    repo.
-4. [`products.json`](https://github.com/RadxaOS-SDK/rsdk/blob/main/src/share/rsdk/configs/products.json)  
+4. [`products.json`](https://github.com/AaronDewes/rsdk/blob/main/src/share/rsdk/configs/products.json)  
    This registers the supported products for `rsdk` and their default configurations.
 
 Right now, product metapackage does not specify dependencies to kernel and
@@ -59,7 +59,7 @@ You need to additionally update following places:
    some common config options.
    Those are defined in [`vendor-profiles`](https://github.com/radxa-pkg/vendor-profiles/blob/main/debian/control)
    repo.
-2. [`socs.json`](https://github.com/RadxaOS-SDK/rsdk/blob/main/src/share/rsdk/configs/socs.json)  
+2. [`socs.json`](https://github.com/AaronDewes/rsdk/blob/main/src/share/rsdk/configs/socs.json)  
    New SoC **MUST** be added to `soc_specific_repo` array as well.
 3. New SoC-specific apt repo under [`radxa-repo`](https://github.com/radxa-repo) organization.
 4. SoC-specific package repo  
@@ -78,5 +78,5 @@ You need to additionally update following places:
    Each vendor needs their own package to pull common config options.
    Those are defined in [`vendor-profiles`](https://github.com/radxa-pkg/vendor-profiles/blob/main/debian/control)
    repo.
-2. [`socs.json`](https://github.com/RadxaOS-SDK/rsdk/blob/main/src/share/rsdk/configs/socs.json)  
+2. [`socs.json`](https://github.com/AaronDewes/rsdk/blob/main/src/share/rsdk/configs/socs.json)  
    There should be a new item for the new vendor.

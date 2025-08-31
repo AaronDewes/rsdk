@@ -53,7 +53,7 @@ to add them to the build steps.
 ## Override packages that are part of the default install
 
 For example, if we want to replace the U-Boot for ROCK 4SE, we need to provide
-both the `u-boot-rock-4se` metapackage, which is [installed by the build script](https://github.com/RadxaOS-SDK/rsdk/blob/47a766e773b187543dd5f38f7fc8c0df7d49e8b0/src/share/rsdk/build/mod/packages/categories/core.libjsonnet#L81),
+both the `u-boot-rock-4se` metapackage, which is [installed by the build script](https://github.com/AaronDewes/rsdk/blob/47a766e773b187543dd5f38f7fc8c0df7d49e8b0/src/share/rsdk/build/mod/packages/categories/core.libjsonnet#L81),
 and the `u-boot-latest` binary package, which provides the bootloader and is
 `u-boot-rock-4se`'s dependency.
 

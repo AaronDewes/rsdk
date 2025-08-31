@@ -61,7 +61,7 @@ function(
                     {
                         name: "Query product info",
                         id: "query",
-                        uses: "RadxaOS-SDK/rsdk/.github/actions/query@main",
+                        uses: "AaronDewes/rsdk/.github/actions/query@main",
                         with: {
                             product: target
                         }
@@ -102,7 +102,7 @@ function(
                     },
                     {
                         name: "Build image",
-                        uses: "RadxaOS-SDK/rsdk/.github/actions/build@main",
+                        uses: "AaronDewes/rsdk/.github/actions/build@main",
                         with: {
                             product: "${{ matrix.product }}",
                             suite: "${{ matrix.suite }}",

@@ -47,7 +47,7 @@ function(
                         name: "Checkout rsdk",
                         uses: "actions/checkout@v5",
                         with: {
-                            repository: "RadxaOS-SDK/rsdk",
+                            repository: "AaronDewes/rsdk",
                             ref: "%(git_rev)s" % {git_rev: git_rev},
                         },
                     },

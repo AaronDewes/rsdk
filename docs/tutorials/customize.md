@@ -8,13 +8,13 @@ YAML itself is not a templating language, so it cannot dynamically generate diff
 
 Lastly, `mmdebstrap` does not handle disk image generation. We again use `jsonnet` to dynamically generate a [`guestfish`](https://libguestfs.org/guestfish.1.html) script to handle this task.
 
-All of those tools are glued by `bash` to provide a frontend, known as [`rsdk-build`](https://github.com/RadxaOS-SDK/rsdk/tree/main/src/libexec/rsdk/rsdk-build).
+All of those tools are glued by `bash` to provide a frontend, known as [`rsdk-build`](https://github.com/AaronDewes/rsdk/tree/main/src/libexec/rsdk/rsdk-build).
 
 Depending on your goal, you would need the knowledge of some of the above tools.
 
 ## Rootfs customization
 
-[`rootfs.jsonnet`](https://github.com/RadxaOS-SDK/rsdk/tree/main/src/share/rsdk/build/rootfs.jsonnet) is the entry point for rootfs template. It collects the various inputs and passes them to different modules.
+[`rootfs.jsonnet`](https://github.com/AaronDewes/rsdk/tree/main/src/share/rsdk/build/rootfs.jsonnet) is the entry point for rootfs template. It collects the various inputs and passes them to different modules.
 
 Module loading order matters, as that will determine [`*-hooks`](https://manpages.debian.org/testing/mmdebstrap/mmdebstrap.1.en.html#HOOKS)'s execution order. The safest way is to only edit the `customize-hooks` field in `rootfs.jsonnet` and only adding new entries after the existing ones.
 
@@ -24,4 +24,4 @@ Checkout [`Work with local packages`](local_pkg.md#rsdk-build---debs) if you hav
 
 ## Disk image customization
 
-[`image.jsonnet`](https://github.com/RadxaOS-SDK/rsdk/tree/main/src/share/rsdk/build/rootfs.jsonnet) is the template for the deployment script. It is generally not necessary to change this part.
+[`image.jsonnet`](https://github.com/AaronDewes/rsdk/tree/main/src/share/rsdk/build/rootfs.jsonnet) is the template for the deployment script. It is generally not necessary to change this part.

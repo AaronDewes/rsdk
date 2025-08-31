@@ -10,11 +10,11 @@ runs:
   steps:
     - name: Query suites info
       id: query
-      uses: RadxaOS-SDK/rsdk/.github/actions/query@main
+      uses: AaronDewes/rsdk/.github/actions/query@main
     - name: Checkout
       uses: actions/checkout@v5
       with:
-        repository: RadxaOS-SDK/rsdk
+        repository: AaronDewes/rsdk
         path: .tmp/rsdk
     - name: Dispatch workflow
       env:
