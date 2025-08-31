@@ -156,7 +156,7 @@
         "product_name": "Radxa CM3 RPI CM4 IO",
         "product_full_name": "Radxa ROCK 3 Compute Module with Raspberry Pi Compute Module 4 IO Board",
         "soc": "rk3566",
-        "supported_suite": ["bullseye"],
+        "supported_suite": ["bookworm"],
         "supported_edition": ["xfce"]
     },
     {
